@@ -14,7 +14,6 @@
 		EBDC687721AC492200535D3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDC687621AC492200535D3E /* AppDelegate.swift */; };
 		EBDC687C21AC492200535D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDC687A21AC492200535D3E /* Main.storyboard */; };
 		EBDC687E21AC492800535D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDC687D21AC492800535D3E /* Assets.xcassets */; };
-		EBDC688121AC492800535D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDC687F21AC492800535D3E /* LaunchScreen.storyboard */; };
 		EBDC688C21AC492900535D3E /* DataProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDC688B21AC492900535D3E /* DataProjectTests.swift */; };
 		EBDC689721AC492900535D3E /* DataProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDC689621AC492900535D3E /* DataProjectUITests.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +44,6 @@
 		EBDC687621AC492200535D3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBDC687B21AC492200535D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBDC687D21AC492800535D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EBDC688021AC492800535D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBDC688221AC492800535D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBDC688721AC492800535D3E /* DataProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDC688B21AC492900535D3E /* DataProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProjectTests.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				EBDC687A21AC492200535D3E /* Main.storyboard */,
-				EBDC687F21AC492800535D3E /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,7 +267,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBDC688121AC492800535D3E /* LaunchScreen.storyboard in Resources */,
 				EB24240D21B18607004FEED1 /* bucket18.csv in Resources */,
 				EBDC687E21AC492800535D3E /* Assets.xcassets in Resources */,
 				EBDC687C21AC492200535D3E /* Main.storyboard in Resources */,
@@ -343,14 +339,6 @@
 				EBDC687B21AC492200535D3E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EBDC687F21AC492800535D3E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EBDC688021AC492800535D3E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
