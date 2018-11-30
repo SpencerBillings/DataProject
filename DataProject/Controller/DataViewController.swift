@@ -25,14 +25,21 @@ class DataViewController: UITableViewController {
 
     public override func numberOfSections(in tableView: UITableView) -> Int
     {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
-
+    
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return bucketList.count
+    }
+    
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "dataIdentifier", for: indexPath) as! BucketItemCell
+        
+        cell.currentBucketItem = bucketList[indexPath.row]
+        
+        return cell
     }
 
     lazy var bucketList : [BucketItem] =
@@ -62,7 +69,7 @@ class DataViewController: UITableViewController {
         }
         return items
     }
-    
+
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

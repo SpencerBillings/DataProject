@@ -12,7 +12,10 @@ class BucketItemCell: UITableViewCell
 {
     var currentBucketItem : BucketItem!
     {
+        didSet
+        {
         updateCellView()
+        }
     }
 
     public override func awakeFromNib() -> Void
