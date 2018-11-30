@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB24240821B18466004FEED1 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB24240721B18466004FEED1 /* DataViewController.swift */; };
+		EB24240A21B184AE004FEED1 /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB24240921B184AE004FEED1 /* BucketItemCell.swift */; };
+		EB24240D21B18607004FEED1 /* bucket18.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB24240C21B18607004FEED1 /* bucket18.csv */; };
+		EB24241121B18804004FEED1 /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB24241021B18804004FEED1 /* BucketItem.swift */; };
 		EBDC687721AC492200535D3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDC687621AC492200535D3E /* AppDelegate.swift */; };
-		EBDC687921AC492200535D3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDC687821AC492200535D3E /* ViewController.swift */; };
 		EBDC687C21AC492200535D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDC687A21AC492200535D3E /* Main.storyboard */; };
 		EBDC687E21AC492800535D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDC687D21AC492800535D3E /* Assets.xcassets */; };
 		EBDC688121AC492800535D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDC687F21AC492800535D3E /* LaunchScreen.storyboard */; };
@@ -34,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB24240721B18466004FEED1 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		EB24240921B184AE004FEED1 /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		EB24240C21B18607004FEED1 /* bucket18.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bucket18.csv; path = ../../../../../Downloads/bucket18.csv; sourceTree = "<group>"; };
+		EB24241021B18804004FEED1 /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
 		EBDC687321AC492200535D3E /* DataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDC687621AC492200535D3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBDC687821AC492200535D3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EBDC687B21AC492200535D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBDC687D21AC492800535D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBDC688021AC492800535D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB24240B21B1850F004FEED1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB24241021B18804004FEED1 /* BucketItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EBDC686A21AC492200535D3E = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +111,10 @@
 		EBDC687521AC492200535D3E /* DataProject */ = {
 			isa = PBXGroup;
 			children = (
-				EBDC68A621AC4A0500535D3E /* DataResources */,
-				EBDC68A521AC49F500535D3E /* DataController */,
-				EBDC68A421AC497500535D3E /* DataView */,
+				EB24240B21B1850F004FEED1 /* Model */,
+				EBDC68A521AC49F500535D3E /* Controller */,
+				EBDC68A621AC4A0500535D3E /* Resources */,
+				EBDC68A421AC497500535D3E /* View */,
 			);
 			path = DataProject;
 			sourceTree = "<group>";
@@ -122,31 +137,33 @@
 			path = DataProjectUITests;
 			sourceTree = "<group>";
 		};
-		EBDC68A421AC497500535D3E /* DataView */ = {
+		EBDC68A421AC497500535D3E /* View */ = {
 			isa = PBXGroup;
 			children = (
 				EBDC687A21AC492200535D3E /* Main.storyboard */,
 				EBDC687F21AC492800535D3E /* LaunchScreen.storyboard */,
 			);
-			path = DataView;
+			path = View;
 			sourceTree = "<group>";
 		};
-		EBDC68A521AC49F500535D3E /* DataController */ = {
+		EBDC68A521AC49F500535D3E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EBDC687821AC492200535D3E /* ViewController.swift */,
+				EB24240921B184AE004FEED1 /* BucketItemCell.swift */,
+				EB24240721B18466004FEED1 /* DataViewController.swift */,
 			);
-			path = DataController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		EBDC68A621AC4A0500535D3E /* DataResources */ = {
+		EBDC68A621AC4A0500535D3E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EB24240C21B18607004FEED1 /* bucket18.csv */,
 				EBDC687621AC492200535D3E /* AppDelegate.swift */,
 				EBDC687D21AC492800535D3E /* Assets.xcassets */,
 				EBDC688221AC492800535D3E /* Info.plist */,
 			);
-			path = DataResources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBDC688121AC492800535D3E /* LaunchScreen.storyboard in Resources */,
+				EB24240D21B18607004FEED1 /* bucket18.csv in Resources */,
 				EBDC687E21AC492800535D3E /* Assets.xcassets in Resources */,
 				EBDC687C21AC492200535D3E /* Main.storyboard in Resources */,
 			);
@@ -280,7 +298,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBDC687921AC492200535D3E /* ViewController.swift in Sources */,
+				EB24240A21B184AE004FEED1 /* BucketItemCell.swift in Sources */,
+				EB24241121B18804004FEED1 /* BucketItem.swift in Sources */,
+				EB24240821B18466004FEED1 /* DataViewController.swift in Sources */,
 				EBDC687721AC492200535D3E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
