@@ -24,8 +24,6 @@ class BucketItemCell: UITableViewCell
     public override func setSelected(_ selected: Bool, animated: Bool) -> Void
     {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
     @IBOutlet weak var bucketItemText : UILabel!
@@ -47,4 +45,20 @@ class BucketItemCell: UITableViewCell
         return emoji!
     }
     
+    /* This method updates te contents of each cell because it is called in the didSet property observer. */
+    private func updateCellView() -> Void
+    {
+        if(currentBucketItem != nil)
+        {
+            bucketItemSignature.text = currentBucketItem.itemAuthor
+            bucketItemText.text = currentBucketItem.itemContents
+        }
+        else
+        {
+        bucketItemSignature.text = "Author here"
+        bucketItemText.text = "Bucket item contents here"
+        }
+        
+        bucketItemSymbol.text = randomEmoji()
+    }
 }
